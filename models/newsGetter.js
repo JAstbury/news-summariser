@@ -7,11 +7,7 @@ function getNews() {
     headings.push(JSON.parse(request.responseText));
       }
   };
-  request.open('GET', 'http://news-summary-api.herokuapp.com/guardian?apiRequestUrl=http://content.guardianapis.com/search?section=world&show-fields=body&show-editors-picks=true');
+  request.open('GET', 'http://news-summary-api.herokuapp.com/guardian?apiRequestUrl=http://content.guardianapis.com/search?section=world&show-fields=thumbnail&show-editors-picks=true');
   request.send();
   return headings;
-}
-
-function readNews() {
-  return headings[0].response.results;
 }
