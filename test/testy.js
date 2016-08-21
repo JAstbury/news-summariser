@@ -1,5 +1,4 @@
-(function(exports) {  //self-executing anonymous function
-  function Testy(){}
+function Testy(){}
 
   Testy.prototype.isTrue = function(testTitle, assertionToCheck) {
       if (!assertionToCheck) {
@@ -10,6 +9,3 @@
         return true;
       }
     };
-
-  exports.Testy = Testy;
-})(this);

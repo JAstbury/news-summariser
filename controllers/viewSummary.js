@@ -18,7 +18,6 @@ function showArticle(id){
       sum = readSummary();
     }, 3000);
     setTimeout(function() {
-      console.log('*******5******');
       document.getElementById("selectedArticle").innerHTML = viewSummaryz(sum.sentences, id);
     }, 5000);
 }
