@@ -15,6 +15,12 @@ h1 {
   padding: 10px;
 }
 
+#selectedArticle a:link {
+  text-align: center;
+  color: #A9DDE8;
+  font-size: 15px;
+}
+
 #headings {
   margin-top: 30px;
 }
