@@ -6,5 +6,4 @@ setTimeout(function() {
 
 setTimeout(function() {
   document.getElementById("headings").innerHTML = viewNewz(headings);
-  console.log(headings);
 }, 2000);
