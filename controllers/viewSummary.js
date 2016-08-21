@@ -13,5 +13,12 @@ function getArticleFromURL(location){
 }
 
 function showArticle(id){
-  document.getElementById("selectedArticle").innerHTML = getSummary(id);
+  getSummary(id);
+    setTimeout(function() {
+      sum = readSummary();
+    }, 4000);
+    setTimeout(function() {
+      console.log('*******5******');
+      document.getElementById("selectedArticle").innerHTML = sum.sentences;
+    }, 6000);
 }

@@ -1,7 +1,8 @@
 var summary = 0;
 
-function getSummary(url) {
+function getSummary(id) {
   var srequest = new XMLHttpRequest();
+  var url = headings[id].webUrl;
   srequest.onreadystatechange = function() {
     if(srequest.readyState === 4 && srequest.status === 200) {
     summary = JSON.parse(srequest.responseText);
@@ -11,10 +12,12 @@ function getSummary(url) {
   srequest.send();
   setTimeout(function() {
     console.log(summary);
+    console.log('*****2*******');
     return summary;
-  }, 2000);
+  }, 1000);
 }
 
 function readSummary() {
-  return summary.sentences[0];
+  console.log('***************');
+  return summary;
 }
