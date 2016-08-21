@@ -16,9 +16,9 @@ function showArticle(id){
   getSummary(id);
     setTimeout(function() {
       sum = readSummary();
-    }, 4000);
+    }, 3000);
     setTimeout(function() {
       console.log('*******5******');
       document.getElementById("selectedArticle").innerHTML = viewSummaryz(sum.sentences, id);
-    }, 6000);
+    }, 5000);
 }
